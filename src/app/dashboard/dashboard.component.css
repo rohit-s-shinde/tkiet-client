@@ -1,0 +1,25 @@
+body{
+    margin-left: 200px;
+}
+
+#logout{
+    background-color: #f38077;
+    color: rgb(247, 245, 244);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: bold;
+    font-size: 20px;
+}
+#title
+{
+    color:coral;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#data{
+    padding: 14px 25px;
+    font-size: 20px;
+}

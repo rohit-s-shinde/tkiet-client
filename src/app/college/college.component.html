@@ -1,0 +1,32 @@
+<app-sidebar></app-sidebar>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <form action="">
+      <table align="center">
+        <tr>
+          <th>Keywords</th>
+          <th>Information</th>
+          <th>Entities</th>
+        </tr>
+        <tr *ngFor="let quess of ques">
+          <td><input type="text" id="key" value={{quess.key}}></td>
+          <td><input type="text" id="info" value={{quess.info}}></td>
+          <td><input type="text" id="ent" value={{quess.ent}}></td>
+        </tr>
+      </table>
+      <table align="center" class="bt">
+        <tr>
+          <td class="rw"><button type="button" (click)="add($event)">Add</button></td>
+          <td class="rw"><button type="button" (click)="update($event)">Update</button></td>
+          <td class="rw"><button type="button" (click)="delete($event)">Delete</button></td>
+        </tr>
+      </table>
+    </form>
+
+    <!--input [(ngModel)]='d'> 
+    Value:{{d}}-->
+  </body>
+</html>

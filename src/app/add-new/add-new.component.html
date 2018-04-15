@@ -1,0 +1,39 @@
+<app-sidebar></app-sidebar>
+<html>
+  <head></head>
+  <body>
+    <form action="" method="POST">
+      <table align="center">
+        <tr>
+          <td>Category</td>
+          <td>
+              <select [(ngModel)]="selectedOption" name="first">
+                <option *ngFor="let o of categories">
+                  {{o.category}}
+                </option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Entity</td>
+          <td><input type="text" id="ent"></td>
+        </tr>
+        <tr>
+          <td>Information</td>
+          <td><input type="text" id="info"></td>
+        </tr>
+        <tr>
+          <td>Keywords</td>
+          <td><input type="text" id="key"></td>
+        </tr>
+      </table>
+      <table align="center" class="bt" ng-controller="myCtrl">
+        <tr>
+          <td class="rw"><button type="button" (click)="add($event)">Add</button></td>
+          <td class="rw"><button type="reset">Clear</button></td>
+          <td class="rw"><button type="button" (click)="cancle($event)">Cancle</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

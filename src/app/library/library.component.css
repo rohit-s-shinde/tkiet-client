@@ -1,0 +1,29 @@
+body{
+    margin-left: 200px;
+}
+
+table,th{
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+table{
+    margin-top: 50px; 
+}
+input{
+    height: 25px;
+    border-color: white;
+    text-align: center;
+}
+
+.bt{
+    border: solid white 1px;
+}
+button{
+    padding: 10px;
+}
+.rw{
+    padding: 10px;
+}

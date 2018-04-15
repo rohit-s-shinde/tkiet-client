@@ -1,0 +1,21 @@
+
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <h1 class="back"></h1>
+        <form (submit)="loginUser()">
+        <div class="login-block">
+            <h1>Login</h1>
+            <h3 *ngIf="logInFail==true">Authentication Failed</h3>
+            <input type="text" value="" placeholder="Username" id="username" />
+            <input type="password" value="" placeholder="Password" id="password" />
+            <a routerLink="/registration">Register</a>
+            <a routerLink="">Forgot Password?</a><br><br><br>
+            <button type="submit" value="login">Submit</button><br><br>
+            <button type="reset">Cancle</button>            
+        </div>
+    </form>
+    </body>
+</html>

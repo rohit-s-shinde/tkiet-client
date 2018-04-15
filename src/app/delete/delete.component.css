@@ -1,0 +1,17 @@
+table,td,tr{
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.bt,.rw{
+    border: solid white 1px;
+}
+button{
+    padding: 10px;
+    font-size: 16px;
+}
+.rw{
+    padding: 10px;
+}

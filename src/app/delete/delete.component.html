@@ -1,0 +1,33 @@
+<app-sidebar></app-sidebar>
+<html>
+  <head></head>
+  <body>
+    <form action="">
+      <table align="center">
+        <tr>
+          <td>Category</td>
+          <td>
+            <select name="cat">
+              <option *ngFor="let cat of categories">{{cat.category}}</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Keywords</td>
+          <td>
+            <select name="key">
+              <option *ngFor="let key of keywords">{{key.keyword}}</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <table align="center" class="bt">
+        <tr>
+          <td class="rw"><button type="button" (click)="delete($event)">Delete</button></td>
+          <td class="rw"><button type="reset">Clear</button></td>
+          <td class="rw"><button type="button" (click)="cancle($event)">Cancle</button></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

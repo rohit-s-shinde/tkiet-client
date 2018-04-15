@@ -1,0 +1,37 @@
+<html>
+  <head>
+    
+  </head>
+  <body><br>
+    <h1>Registration Form</h1>
+    <form (submit)="regUser()">
+      <table align="center">
+        <tr>
+          <td><label for="fname">First Name:</label></td>
+          <td><input type="text" id="fname" name="fname"></td>
+          <td><label *ngIf="fn===false" id="err">Fail</label></td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last Name:</label></td>
+          <td><input type="text" id="lname"></td>
+          <td><label *ngIf="ln===false" id="err">Fail</label></td>   
+        </tr>
+        <tr>
+          <td><label for="mail">Email:</label></td>
+          <td><input type="email" id="email"></td>
+          <td><label *ngIf="em===false" id="err">Fail</label></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password"></td>
+          <td><label *ngIf="ps===false" id="err">Fail</label></td>
+        </tr>
+        <tr>
+          <td  style="padding-right:35px"><button type="submit">Register</button></td>
+          <td style="text-align:left"><button type="reset">Clear</button>
+          <a id="reg" routerLink="/">Log In</a></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

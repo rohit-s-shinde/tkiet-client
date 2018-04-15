@@ -1,0 +1,23 @@
+<app-sidebar></app-sidebar>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <form (submit)="logoutUser()">
+        <p align="right"><label id="data">Welcome, {{data}}</label>
+        <button type="submit" id="logout">LogOut</button></p>
+    </form>
+    <h1 id="title">{{title}}</h1>
+    <marquee behavior="alternate" direction="left" scrollamount="5">
+        <img src="assets/Images/i-bot.png" alt="Not Available" height="300">
+        <img src="assets/Images/cs.png" alt="Not Available" height="300">
+        <img src="assets/Images/slk.jpg" alt="Not Available" height="300">
+        <img src="assets/Images/ask.jpg" alt="Not Available" height="300">
+        <img src="assets/Images/time.png" alt="Not Available" height="300">
+    </marquee>
+</body>
+</html>
