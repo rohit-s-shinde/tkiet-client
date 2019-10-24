@@ -29,9 +29,6 @@ export class AddNewComponent implements OnInit {
      }
    ];
 
-  /* public post(data: string) {
-    return this.http.post('http://localhost:3000/client/addnew',JSON.stringify({data: data}));
-  }*/
   ngOnInit() {
   }
 
