@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AdmissionComponent implements OnInit {
 
   constructor(private router: Router) {
-    //this.loadPeople();
+
    }
   textValue="";
   ques = [
