@@ -1,5 +1,5 @@
 var hapiExtension = require("../tktbot-web/plugins/bot/hapi-extensions");
-// change
+// base route
 exports.default = function(server){
     server.route({
         method: 'GET',
