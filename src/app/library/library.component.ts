@@ -10,6 +10,7 @@ export class LibraryComponent implements OnInit {
 
   constructor(private router: Router) {
     //this.loadPeople();
+    //comment
    }
   textValue="";
   ques = [
