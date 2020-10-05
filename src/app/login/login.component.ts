@@ -20,7 +20,8 @@ export class LoginComponent implements OnInit {
   loginUser(e) {
     const uname = ((document.getElementById('username') as HTMLInputElement).value);
     const pass = ((document.getElementById('password') as HTMLInputElement).value);
-    //this.loadPeople();
+    //this.loadPeople();   
+    //comment
     if (uname === 'admin' && pass === '1234') {
       this.name = uname;
       this.password = pass;
